@@ -1,0 +1,373 @@
+
+import random
+
+def stage(which):
+    if which == 1:
+        return 'Argentina, Las Juntas'
+    elif which == 2:
+        return 'Argentina, Valle de los puentes'
+    elif which == 3:
+        return 'Argentina, Camino de acantilados y rocas'
+    elif which == 4:
+        return 'Argentina, San Isidro'
+    elif which == 5:
+        return 'Argentina, Miraflores'
+    elif which == 6:
+        return 'Argentina, El Rodeo'
+    elif which == 7:
+        return 'Argentina, Camino a La Puerta'
+    elif which == 8:
+        return 'Argentina, Valle de los puentes a la inversa'
+    elif which == 9:
+        return 'Argentina, Camino de acantilados y rocas inverso'
+    elif which == 10:
+        return 'Argentina, Camino a Coneta'
+    elif which == 11:
+        return 'Argentina, Huillaprima'
+    elif which == 12:
+        return 'Argentina, La Merced'
+    elif which == 13:
+        return 'Australia, Mount Kaye Pass'
+    elif which == 14:
+        return 'Australia, Chandlers Creek'
+    elif which == 15:
+        return 'Australia, Bondi Forest'
+    elif which == 16:
+        return 'Australia, Reckton Plains'
+    elif which == 17:
+        return 'Australia, Yambulla Mountain Ascent'
+    elif which == 18:
+        return 'Australia, Noorinbee Ridge Ascent'
+    elif which == 19:
+        return 'Australia, Mount Kaye Pass Reverse'
+    elif which == 20:
+        return 'Australia, Chandlers Creek Reverse'
+    elif which == 21:
+        return 'Australia, Taylor Farm Sprint'
+    elif which == 22:
+        return 'Australia, Reckton Plains Reverse'
+    elif which == 23:
+        return 'Australia, Yambulla Mountain Descent'
+    elif which == 24:
+        return 'Australia, Noorinbee Ridge Descent'
+    elif which == 25:
+        return 'New Zealand, Waimarama Point Forward'
+    elif which == 26:
+        return 'New Zealand, Te Awanga Forward'
+    elif which == 27:
+        return 'New Zealand, Waimarama Sprint Forward'
+    elif which == 28:
+        return 'New Zealand, Elsthorpe Sprint Forward'
+    elif which == 29:
+        return 'New Zealand, Ocean Beach Sprint'
+    elif which == 30:
+        return 'New Zealand, Te Awanga Sprint Forward'
+    elif which == 31:
+        return 'New Zealand, Waimarama Point Reverse'
+    elif which == 32:
+        return 'New Zealand, Ocean Beach'
+    elif which == 33:
+        return 'New Zealand, Waimarama Sprint Reverse'
+    elif which == 34:
+        return 'New Zealand, Elsthorpe Sprint Reverse'
+    elif which == 35:
+        return 'New Zealand, Ocean Beach Sprint Reverse'
+    elif which == 36:
+        return 'New Zealand, Te Awanga Sprint Reverse'
+    elif which == 37:
+        return 'Spain, Comienzo en Bellriu'
+    elif which == 38:
+        return 'Spain, Centenera'
+    elif which == 39:
+        return 'Spain, Ascenso por valle el Gualet'
+    elif which == 40:
+        return 'Spain, Vinedos dentro del valle Parra'
+    elif which == 41:
+        return 'Spain, Vinedos Dardenya'
+    elif which == 42:
+        return 'Spain, Descento por carretera'
+    elif which == 43:
+        return 'Spain, Final en Bellriu'
+    elif which == 44:
+        return 'Spain, Camino a Centenera'
+    elif which == 45:
+        return 'Spain, Salida desde Montverd'
+    elif which == 46:
+        return 'Spain, Ascenso bosque Montevard'
+    elif which == 47:
+        return 'Spain, Vinedos Dardenya inversa'
+    elif which == 48:
+        return 'Spain, Subida por Carretera'
+    elif which == 49:
+        return 'USA New England, Beaver Creek Trailer Forward'
+    elif which == 50:
+        return 'USA New England, North Fork Pass'
+    elif which == 51:
+        return 'USA New England, Hancock Creek Burst'
+    elif which == 52:
+        return 'USA New England, Fuller Mountain Ascent'
+    elif which == 53:
+        return 'USA New England, Tolt Valley Sprint Forward'
+    elif which == 54:
+        return 'USA New England, Hancock Hill Sprint Forward'
+    elif which == 55:
+        return 'USA New England, Beaver Creek Trail Reverse'
+    elif which == 56:
+        return 'USA New England, North Fork Pass Reverse'
+    elif which == 57:
+        return 'USA New England, Fury Lake Depart'
+    elif which == 58:
+        return 'USA New England, Fuller Mountain Descent'
+    elif which == 59:
+        return 'USA New England, Tolt Valley Sprint Reverse'
+    elif which == 60:
+        return 'USA New England, Hancock Hill Sprint Reverse'
+    elif which == 61:
+        return 'Poland, Zaróbka'
+    elif which == 62:
+        return 'Poland, Zienki'
+    elif which == 63:
+        return 'Poland, Marynka'
+    elif which == 64:
+        return 'Poland, Kopina'
+    elif which == 65:
+        return 'Poland, Lejno'
+    elif which == 66:
+        return 'Poland, Czarny Las'
+    elif which == 67:
+        return 'Poland, Zagorze'
+    elif which == 68:
+        return 'Poland, Jezioro Rotcze'
+    elif which == 69:
+        return 'Poland, Borysik'
+    elif which == 70:
+        return 'Poland, Józefin'
+    elif which == 71:
+        return 'Poland, Jagodno'    
+    elif which == 72:
+        return 'Poland, Jezioro Lukie'
+    elif which == 73:
+        return 'Monte Carlo, Vallee Descendante'
+    elif which == 74:
+        return 'Monte Carlo, Pra d Alart'
+    elif which == 75:
+        return 'Monte Carlo, Col de Turini - Depart en descente'
+    elif which == 76:
+        return 'Monte Carlo, Route de Turini Decente'
+    elif which == 77:
+        return 'Monte Carlo, Gordolon - Courte Montee'
+    elif which == 78:
+        return 'Monte Carlo, Col de Turini - Sprint en montee'
+    elif which == 79:
+        return 'Monte Carlo, Route de Turini'
+    elif which == 80:
+        return 'Monte Carlo, Col de Turini Depart'
+    elif which == 81:
+        return 'Monte Carlo, Approache du Col de Turini Montee'
+    elif which == 82:
+        return 'Monte Carlo, Route de Turini Montee'
+    elif which == 83:
+        return 'Monte Carlo, Col de Turini - Sprint en descente'
+    elif which == 84:
+        return 'Monte Carlo, Col de Turini - Descente'
+    elif which == 85:
+        return 'Sweden, Ransbysater'
+    elif which == 86:
+        return 'Sweden, Hamra'
+    elif which == 87:
+        return 'Sweden, Algsjon Sprint'
+    elif which == 88:
+        return 'Sweden, Stor-Jangen Sprint'
+    elif which == 89:
+        return 'Sweden, Elgsjon'
+    elif which == 90:
+        return 'Sweden, Ostra Hinnsjon'
+    elif which == 91:
+        return 'Sweden, Norraskoga'
+    elif which == 92:
+        return 'Sweden, Lysvik'
+    elif which == 93:
+        return 'Sweden, Stor-Jangen sprint reverse'
+    elif which == 94:
+        return 'Sweden, Skogsrallyt'
+    elif which == 95:
+        return 'Sweden, Bjorklangen'    
+    elif which == 96:
+        return 'Sweden, Algsjon'
+    elif which == 97:
+        return 'Germany, Oberstein'
+    elif which == 98:
+        return 'Germany, Hammerstein'
+    elif which == 99:
+        return 'Germany, Waldaufsteig'
+    elif which == 100:
+        return 'Germany, Kreuzungsring'
+    elif which == 101:
+        return 'Germany, Verbundsring'
+    elif which == 102:
+        return 'Germany, Flugzeugring'
+    elif which == 103:
+        return 'Germany, Frauenberg'
+    elif which == 104:
+        return 'Germany, Ruschberg'
+    elif which == 105:
+        return 'Germany, Kreuzungsring reverse'
+    elif which == 106:
+        return 'Germany, Waldabstieg'
+    elif which == 107:
+        return 'Germany, Flugzeugring reverse'
+    elif which == 108:
+        return 'Germany, Verbundsring reverse'
+    elif which == 109:
+        return 'Finland, Kontinjärvi'
+    elif which == 110:
+        return 'Finland, Kailajärvi'
+    elif which == 111:
+        return 'Finland, Naarajärvi'
+    elif which == 112:
+        return 'Finland, Kakaristo'
+    elif which == 113:
+        return 'Finland, Iso Oksjärvi'
+    elif which == 114:
+        return 'Finland, Kotajärvi'
+    elif which == 115:
+        return 'Finland, Hämelahti'
+    elif which == 116:
+        return 'Finland, Jyrkysjärvi'
+    elif which == 117:
+        return 'Finland, Paskuri'
+    elif which == 118:
+        return 'Finland, Pitkäjärvi'
+    elif which == 119:
+        return 'Finland, Järvenkylä'    
+    elif which == 120:
+        return 'Finland, Oksala'
+    elif which == 121:
+        return 'Greece, Anodou Farmakas'
+    elif which == 122:
+        return 'Greece, Pomona Érixi'
+    elif which == 123:
+        return 'Greece, Koryfi Dafni'
+    elif which == 124:
+        return 'Greece, Perasma Platani'
+    elif which == 125:
+        return 'Greece, Ourea Spevsi'
+    elif which == 126:
+        return 'Greece, Abies Koilàda'
+    elif which == 127:
+        return 'Greece, Kathodo Leontiou'
+    elif which == 128:
+        return 'Greece, Fourkéta Kourva'
+    elif which == 129:
+        return 'Greece, Ampelonas Ormi'
+    elif which == 130:
+        return 'Greece, Tsiristra Théa'
+    elif which == 131:
+        return 'Greece, Pedines Epidaxi'
+    elif which == 132:
+        return 'Greece, Ypsona tou Dasos'
+    elif which == 133:
+        return 'Wales, Sweet Lamb'
+    elif which == 134:
+        return 'Wales, Pant Mawr'
+    elif which == 135:
+        return 'Wales, Bidno Moorland'
+    elif which == 136:
+        return 'Wales, River Severn Valley'
+    elif which == 137:
+        return 'Wales, Fferm Wynt'
+    elif which == 138:
+        return 'Wales, Dyffryn Afon'
+    elif which == 139:
+        return 'Wales, Geufron Forest'
+    elif which == 140:
+        return 'Wales, Bidno Moorland Reverse'
+    elif which == 141:
+        return 'Wales, Pant Mawr Reverse'
+    elif which == 142:
+        return 'Wales, Bronfelen'
+    elif which == 143:
+        return 'Wales, Dyffryn Afon Reverse'    
+    elif which == 144:
+        return 'Wales, Fferm Wynt Reverse'
+    elif which == 145:
+        return 'Scotland, South Morningside'
+    elif which == 146:
+        return 'Scotland, Rosebank Farm'
+    elif which == 147:
+        return 'Scotland, Old Butterstone Muir'
+    elif which == 148:
+        return 'Scotland, Newhouse Bridge'
+    elif which == 149:
+        return 'Scotland, Glencastle Farm'
+    elif which == 150:
+        return 'Scotland, Annbank Station'
+    elif which == 151:
+        return 'Scotland, South Morningside Reverse'
+    elif which == 152:
+        return 'Scotland, Rosebank Farm Reverse'
+    elif which == 153:
+        return 'Scotland, Old Butterstone Muir Reverse'
+    elif which == 154:
+        return 'Scotland, Newhouse Bridge Reverse'
+    elif which == 155:
+        return 'Scotland, Glencastle Farm Reverse'
+    elif which == 156:
+        return 'Scotland, Annbank Station Reverse'    
+
+def conditions(weather):
+    if weather == 1:
+        return 'daytime/dry'
+    if weather == 2:
+        return 'daytime/wet'
+    if weather == 3:
+        return 'sunset/dry'
+    if weather == 4:
+        return 'sunset/wet'
+    if weather == 5:
+        return 'night/dry'
+    if weather == 6:
+        return 'night/wet'
+
+def carCategory(car):
+    if car == 1:
+        return 'Historic Rally H1 (FWD).'
+    if car == 2:
+        return 'Historic Rally H2 (FWD).'
+    if car == 3:
+        return 'Historic Rally H2 (RWD).'
+    if car == 4:
+        return 'F2 Kit Car.'
+    if car == 5:
+        return 'Historic Rally H3 (RWD).'
+    if car == 6:
+        return 'Historic Rally Group B (4WD).'
+    if car == 7:
+        return 'Historic Rally Group B (RWD).'
+    if car == 8:
+        return 'Modern Rally Group A.'
+    if car == 9:
+        return 'Modern Rally GT.'
+    if car == 10:
+        return 'Modern Rally R2.'
+    if car == 11:
+        return 'Modern Rally NR4/R4.'
+    if car == 12:
+        return '2000cc (4WD).'
+    if car == 13:
+        return 'Modern Rally R5 (4WD).'
+
+    
+
+r = random.randint(1, 156)
+selectedStage = stage(r)
+
+r = random.randint(1, 6)
+selectedTimeOfDay = conditions(r)
+
+r = random.randint(1, 13)
+selectedCarClass = carCategory(r)
+
+print('Drive ' + selectedStage + ' during ' + selectedTimeOfDay + ' conditions in ' + selectedCarClass)
+
+input('Press ENTER to exit')
